@@ -1,0 +1,32 @@
+//get request for all players
+GET http://localhost:3006/players
+
+//posting new player
+###
+POST http://localhost:3006/players
+Content-Type: application/json
+
+{
+    "playerName": "Vishal",
+    "jerseyNumber": 17,
+    "role": "Bowler"
+}
+
+//getting specific player
+###
+GET http://localhost:3006/players/27
+
+//updating player
+###
+PUT http://localhost:3006/players/27
+Content-Type: application/json
+
+{
+    "playerName": "Maneesh",
+    "jerseyNumber": 54,
+    "role": "All-rounder"
+}
+
+//deleting player
+###
+DELETE http://localhost:3006/players/27
